@@ -35,4 +35,6 @@ def turn(board)
   end
 end
 
-def play(board)
+def play(board) #accept board as an argument and start a loop that calls #turn to run the game. Stops looping when all spaces on the board are filled.
+  while board.include?(" ")
+    turn(board)
